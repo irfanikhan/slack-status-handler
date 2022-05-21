@@ -1,12 +1,12 @@
 const express = require("express");
+require('dotenv').config();
+
 const { WebClient } = require("@slack/web-api");
 
 const app = express();
 app.use(express.json());
 
-const web = new WebClient(
-  "xoxb-3138624757526-3138757148166-tXHoIVQhGBgyxCxDamQ05fIu"
-);
+const web = new WebClient(process.env.SLACK_CLIENT_TOKEN);
 
 app.get("/", (req, res) => {
   res.json("Post your status by navigating to /api/post-status");

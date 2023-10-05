@@ -9,4 +9,4 @@
 - Copy the token of your app.
 - Create a `.env` in root directory of this project.
 - Pase the key into `.env`, e.g. `SLACK_CLIENT_TOKEN=YOUR_TOKEN`
-- Run the app by `nodde .`
+- Run the script by `node .`
